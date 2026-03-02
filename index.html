@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Future Dr. Nikhil 💙</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LANDING -->
+<section id="landing" class="screen active">
+    <h1>💙 Special Surprise for Future Dr. Nikhil 💙</h1>
+    <p>Birthday Alert: 30th March 🎂</p>
+    <button onclick="nextScreen('landing','game1')">Begin Checkup</button>
+</section>
+
+<!-- GAME 1 -->
+<section id="game1" class="screen">
+    <h1>🩺 Heartbeat Monitor</h1>
+    <p>Stop the monitor when BPM is between 70 - 90</p>
+
+    <div id="monitor">BPM: <span id="bpm">0</span></div>
+
+    <button onclick="startMonitor()">Start Monitor</button>
+    <button onclick="stopMonitor()">Stop</button>
+</section>
+
+<!-- GAME 2 -->
+<section id="game2" class="screen">
+    <h1>💊 Friendship Cure</h1>
+    <p>Diagnosis: Missing Best Friend Energy 💙</p>
+    <p>Select the best medicine:</p>
+
+    <button onclick="chooseMedicine('care')">💖 Care & Support</button>
+    <button onclick="chooseMedicine('fun')">😂 Unlimited Fun</button>
+    <button onclick="chooseMedicine('ignore')">😒 Ignore Calls</button>
+</section>
+
+<!-- MESSAGE -->
+<section id="message" class="screen">
+    <h1>💌 A Message From Prakruthi 💌</h1>
+    <p>
+        From your late night studies to your white coat dreams...  
+        I’ve seen your dedication and your strength.  
+
+        One day the world will proudly say  
+        “Dr. Nikhil saved my life.”  
+
+        And I will proudly say  
+        “He is my best friend.” 💙  
+
+        You are truly special.
+    </p>
+    <button onclick="nextScreen('message','countdown'); startCountdown();">
+        See Countdown
+    </button>
+</section>
+
+<!-- COUNTDOWN -->
+<section id="countdown" class="screen">
+    <h1>⏳ Countdown to 30th March</h1>
+    <div id="timer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
